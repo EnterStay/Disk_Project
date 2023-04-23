@@ -8,7 +8,7 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
         crossorigin="anonymous">
-    <title></title>
+    <title>Bebra Disk</title>
     <!-- bootstrap 5.x or 4.x is supported. You can also use the bootstrap css 3.3.x versions -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
   <!-- default icons used in the plugin are from Bootstrap 5.x icon library (which can be enabled by loading CSS below) -->
@@ -33,13 +33,12 @@
     <div class="alert alert-success" role="alert">
         <h1><center>Bebra Disk</center></h1>
      </div>
-     <div class="background">
-        <img src="/static/maxresdefault (7).jpg" />
+     <body bgcolor="#000" background="/static/maxresdefault (7).jpg">
     </div>
     <div class="container">
-   <form action="index.php" method="post" enctype="multipart/form-data">
-        <input id="main_slider" required name="main_slider" type="file" accept="image/*" data-browse-on-zone-click="true">
-       <input type="submit" value="SEND">
+   <form action="/upload" method="post" enctype="multipart/form-data">
+        <input id="main_slider" name="file" type="file" accept="image/*" data-browse-on-zone-click="true">
+       <input type="submit" value="Upload">
    </form>
     </div>
     <script>
